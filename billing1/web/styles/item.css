@@ -1,0 +1,55 @@
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    table {
+        width: 96%;
+        margin-left: 2%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 2%;
+        font-size: 13px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+    input{
+        display: inline-block;
+        vertical-align: middle;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 150px;
+        height: 20px;
+    }
+
+    .roll{
+        height: 90%;
+        overflow: scroll;
+        overflow-x: hidden;
+        bottom: 10%;
+    }

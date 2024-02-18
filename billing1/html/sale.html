@@ -1,0 +1,260 @@
+<?php
+error_reporting(0);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tranaction h3 {
+            position: relative;
+            font-size: 25px;
+            top: 10px;
+            left: 15px;
+        }
+        .cal{
+            position: absolute;
+            background: #ffffff;
+            width: 98%;
+            left: 15px;
+            top: 50px;
+            height: 100px;
+            display: inline-flex;
+            gap: 10px;
+        }
+        .cal p{
+            
+        }
+        .cal .paid , .unpaid , .total{
+            color: #225254;
+            width: 20%;
+            border-radius: 6px;
+            position: relative;
+            height: 70px;
+            top: 15px;
+            left: 20px;
+            font-size: 18px;
+            box-shadow: 1px 1px 10px #c5c5c5;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .cal .paid{
+            background: #B9F3E7; 
+        }
+        .cal .paid h4, .cal .unpaid h4 , .cal .total h4{
+            position: relative;
+            left: 30px;
+            top: 10px;
+        }
+        .cal .paid p , .cal .unpaid p, .cal .total p {
+            position: relative;
+            left: 30px;
+            top: 10px;
+            font-weight: 300;
+
+        }
+
+        .cal .sum{
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+            top: 33px;
+            left: 20px;
+        }
+
+        .cal .unpaid{
+            background: #D0E6FE;
+        }
+
+        .cal .total{
+            background: #F8C888;
+        }
+        .tb {
+            position: absolute;
+            bottom: 0%;
+            margin-bottom: 5%;
+            height: 61%;
+            width: 100%;
+            overflow: scroll;
+            overflow-x: hidden;
+            scrollbar-width: none;
+        }
+        .tb th img {
+            float: right;
+            width: 15px;
+        }
+
+        .tb thead tr th {
+            position: sticky;
+            top: 0;
+        }
+        .tb td{
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 98%;
+            margin-left: 1%;
+        }
+
+        th,
+        td {
+            border: 1px soliddddddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #dddddd;
+        }
+
+        .adds{
+            position: relative;
+            top: 110px;
+            float: right;
+            margin-right: 40px;
+            background-color: #0075E8;
+            padding: 10px;
+            border-radius: 30px;
+            width: 99px;
+        }
+        .adds a{
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            position: relative;
+            top: -2px;
+            left: 10px;
+
+        }
+        .adds img{
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(235deg) brightness(103%) contrast(102%); 
+            position: relative;
+            top: 2px;
+            left: 7px;
+        }
+        .search input{
+            display: inline-block;
+            height: 26px;
+            line-height: 26px;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            outline: none;
+            font-size: 14px;
+            color: black;
+            padding: 0 10px;
+            box-sizing: border-box;
+            position: relative;
+            top: 150px;
+            left: 15px;
+            width: 300px;
+        }
+        .search img{
+            cursor: pointer;
+            position: relative;
+            top: 156px;
+            left: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="profile">
+            <h2>
+                <img src="/images/user_icon.png" alt="#" />
+                SHREE NATH SHOP
+            </h2>
+        </div>
+        <div class="home">
+            <p><img src="home1.png" alt=""><a href="#" class="active">Home</a></p>
+            <p><img src="item.png" alt=""><a href="#">Items </a></p>
+            <p><img src="sale.png" alt=""><a href="#">Sale </a></p>
+            <p><img src="purchase.png" alt=""><a href="#">Purchase </a></p>
+            <p><img src="user.png" alt=""><a href="#">Profile </a></p>
+            <p><img src="setting.png" alt=""><a href="#">Setting </a></p>
+        </div>
+
+    </div>
+    <div class="righttop">
+        <div class="add">
+            <div class="addsale" style="background: #ED1A3B;">
+                <img src="plus1.png" alt=""
+                    style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(235deg) brightness(103%) contrast(102%); margin-left: 20px ;">
+                <a href="#" style="color:#ffffff;">Add Sale</a>
+            </div>
+            <div class="addsale" style="background: #0075E8;">
+                <img src="plus1.png" alt=""
+                    style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(235deg) brightness(103%) contrast(102%);">
+                <a href="#" style="color:#ffffff;">Add Purchase</a>
+            </div>
+            <div class="addsale">
+                <img src="plus1.png" alt="" style="margin-left: 20px;">
+                <a href="#">Add More</a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="sidemenu">
+            <img src="logout.png" alt="">
+            <img src="print.png" alt="">
+            <img src="setting.png" alt="">
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="cal">
+            <div class="paid"><h4>Paid</h4><p>1000</p></div><p class="sum">+</p>
+            <div class="unpaid"><h4>Unpaid</h4><p>100</p></div><p class="sum">=</p>
+            <div class="total"><h4>Total</h4><p>900</p></div>
+        </div>
+        <div class="content">
+        <div class="tranaction">
+            <h3>TRANACTION</h3>
+            <div class="search">
+                <input type="text" name="tranaction_search" placeholder="Search..." ><img src="search.png" alt="">
+            </div>
+            <div class="adds">
+                <img src="plus1.png" alt="">
+                <a href="#">Add Sale</a>
+            </div>
+            <div class="tb">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DATE <img src="filter.png" alt=""></th>
+                            <th>INVOICE NO. <img src="filter.png" alt=""></th>
+                            <th>NAME <img src="filter.png" alt=""></th>
+                            <th>TRANACTION TYPE <img src="filter.png" alt=""></th>
+                            <th>PAYMENT TYPE <img src="filter.png" alt=""></th>
+                            <th>AMOUNT <img src="filter.png" alt=""></th>
+                            <th>STATUS <img src="filter.png" alt=""></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

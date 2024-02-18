@@ -1,0 +1,177 @@
+.tranaction h3 {
+    position: relative;
+    font-size: 25px;
+    top: 10px;
+    left: 15px;
+}
+
+.cal {
+    position: absolute;
+    background: #ffffff;
+    width: 98%;
+    left: 15px;
+    top: 50px;
+    height: 100px;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.cal p {}
+
+.cal .paid,
+.unpaid,
+.total {
+    color: #225254;
+    width: 20%;
+    border-radius: 6px;
+    position: relative;
+    height: 70px;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.cal .paid {
+    background: #B9F3E7;
+}
+
+.cal .paid h4,
+.cal .unpaid h4,
+.cal .total h4 {
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+.cal .paid p,
+.cal .unpaid p,
+.cal .total p {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    font-weight: 300;
+
+}
+
+.cal .sum {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: 33px;
+    left: 20px;
+}
+
+.cal .unpaid {
+    background: #D0E6FE;
+}
+
+.cal .total {
+    background: #F8C888;
+}
+
+.tb {
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 5%;
+    height: 61%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.tb th img {
+    float: right;
+    width: 15px;
+}
+
+.tb thead tr th {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+.tb td {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin-left: 1%;
+}
+
+th,
+td {
+    border: 1px soliddddddd;
+    padding: 12px;
+    text-align: left;
+    font-size: larger;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dddddd;
+}
+
+.adds {
+    position: relative;
+    top: 110px;
+    float: right;
+    margin-right: 40px;
+    background-color: #0075E8;
+    padding: 10px;
+    border-radius: 30px;
+    width: 99px;
+}
+
+.adds a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    top: -2px;
+    left: 10px;
+
+}
+
+.adds img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(235deg) brightness(103%) contrast(102%);
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+.search input {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    color: black;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+    top: 150px;
+    left: 15px;
+    width: 300px;
+}
+
+.search img {
+    cursor: pointer;
+    position: relative;
+    top: 156px;
+    left: -15px;
+}
